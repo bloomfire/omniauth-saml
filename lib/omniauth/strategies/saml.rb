@@ -46,7 +46,13 @@ module OmniAuth
           :name  => @attributes[:name],
           :email => @attributes[:email] || @attributes[:mail],
           :first_name => @attributes[:first_name] || @attributes[:firstname],
-          :last_name => @attributes[:last_name] || @attributes[:lastname]
+          :last_name => @attributes[:last_name] || @attributes[:lastname],
+          :title => @attributes[:title],
+          :bio => @attributes[:bio],
+          :company => @attributes[:company],
+          :phone_number => @attributes[:phone_number] || @attributes[:phone],
+          :sync_profile => @attributes[:sync_profile],
+          :expires => @attributes[:expires]
         }
       end
 
